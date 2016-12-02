@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Threshold的博客</title>
+  <subtitle>Failure is not an option</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2016-12-02T13:53:04.467Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Threshold</name>
+    <email>hsjfox@foxmail.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>IntellijIdea/JRebel 激活</title>
+    <link href="http://yoursite.com/2016/12/02/intellij-idea-activate/"/>
+    <id>http://yoursite.com/2016/12/02/intellij-idea-activate/</id>
+    <published>2016-12-02T13:30:00.000Z</published>
+    <updated>2016-12-02T13:53:04.467Z</updated>
+    
+    <content type="html"><![CDATA[<p>本文主要介绍Intelligent Idea Ultimate版激活以及JRebel的激活.<br>仅供学习交流！喜欢这两大利器的朋友请支持正版！</p>
+<a id="more"></a>
+<h1 id="一-IntelliJIdea-激活"><a href="#一-IntelliJIdea-激活" class="headerlink" title="一. IntelliJIdea 激活"></a>一. IntelliJIdea 激活</h1><p>激活服务器地址<br><figure class="highlight dts"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">http:</span><span class="comment">//idea.imsxm.com/</span></div></pre></td></tr></table></figure></p>
+<p><img src="/assets/archivesImg/2016-12-02/ideaLicenceServer.png" alt="ideaLicenseServer.png"></p>
+<h1 id="二-JRebel-激活"><a href="#二-JRebel-激活" class="headerlink" title="二. JRebel 激活"></a>二. JRebel 激活</h1><p>不废话，打开下面的网址<br><a href="https://my.jrebel.com/account/how-to-activate" target="_blank" rel="external">https://my.jrebel.com/account/how-to-activate</a><br>用你的Facebook和Twitter账号登录，然后就可以获取注册码了。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文主要介绍Intelligent Idea Ultimate版激活以及JRebel的激活.&lt;br&gt;仅供学习交流！喜欢这两大利器的朋友请支持正版！&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="开发工具" scheme="http://yoursite.com/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="intellij" scheme="http://yoursite.com/tags/intellij/"/>
+    
+      <category term="JRebel" scheme="http://yoursite.com/tags/JRebel/"/>
+    
+      <category term="activate" scheme="http://yoursite.com/tags/activate/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2016/12/02/hello-world/"/>
+    <id>http://yoursite.com/2016/12/02/hello-world/</id>
+    <published>2016-12-02T05:04:00.000Z</published>
+    <updated>2016-12-02T13:54:42.248Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Hello-World-Hexo，GitHub-Pages"><a href="#Hello-World-Hexo，GitHub-Pages" class="headerlink" title="Hello ,World.Hexo，GitHub Pages."></a>Hello ,World.Hexo，GitHub Pages.</h1><p><img src="/assets/archivesImg/2016-12-02/ali.jpg" alt="ali.jpg"><br><a id="more"></a><br>我的GitHub Pages终于搭建好了。</p>
+<figure class="highlight abnf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">System.out.println(<span class="string">"Hello World!"</span>)<span class="comment">;</span></div></pre></td></tr></table></figure>
+<p>感谢<a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>框架，感谢漂亮的<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">Next</a>主题。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Hello-World-Hexo，GitHub-Pages&quot;&gt;&lt;a href=&quot;#Hello-World-Hexo，GitHub-Pages&quot; class=&quot;headerlink&quot; title=&quot;Hello ,World.Hexo，GitHub Pages.&quot;&gt;&lt;/a&gt;Hello ,World.Hexo，GitHub Pages.&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;/assets/archivesImg/2016-12-02/ali.jpg&quot; alt=&quot;ali.jpg&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="喜悦" scheme="http://yoursite.com/categories/%E5%96%9C%E6%82%A6/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="gitpages" scheme="http://yoursite.com/tags/gitpages/"/>
+    
+  </entry>
+  
+</feed>
