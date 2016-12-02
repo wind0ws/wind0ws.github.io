@@ -3,16 +3,23 @@
   
     
     <entry>
+      <title><![CDATA[Hexo的使用]]></title>
+      <url>%2F2016%2F12%2F02%2Fhexo-practice%2F</url>
+      <content type="text"><![CDATA[先就不说怎么安装node以及hexo了吧，这个网上比较多。Google is your friend! Baidu is not!!! 写作新建草稿1hexo new draft new-article 回车执行后会在source/_drafts目录下生成一个new-article.md文件使用你喜欢的文本编辑工具编写这个markdown文件吧。 注意：在drafts目录下markdown文件默认是不会显示在你博客上的。需要手动publish才可以。draft相当于草稿。 发布文章1hexo publish new-article 回车后会将new-article.md文件从_drafts目录移动到_posts目录，也就是发布了这个博文。 生成网页1hexo generate 也可以简写：hexo g 启动本地服务1hexo server 也可以简写成:hexo s 清理资源1hexo clean 也可以简写成：hexo cl 发布到Github1hexo deploy 也可以简写成：hexo d如果发布出错，检查你的配置文件以及是否添加了Access Key到Github上。 命令可以用&amp;连起来执行比如我想先清理再生成再发布到Github，可以这么写命令1hexo cl &amp; hexo g &amp; hexo d]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[IntellijIdea/JRebel 激活]]></title>
       <url>%2F2016%2F12%2F02%2Fintellij-idea-activate%2F</url>
-      <content type="text"><![CDATA[本文主要介绍Intelligent Idea Ultimate版激活以及JRebel的激活.仅供学习交流！喜欢这两大利器的朋友请支持正版！ 一. IntelliJIdea 激活激活服务器地址1http://idea.imsxm.com/ 二. JRebel 激活不废话，打开下面的网址https://my.jrebel.com/account/how-to-activate用你的Facebook和Twitter账号登录，然后就可以获取注册码了。]]></content>
+      <content type="text"><![CDATA[本文主要介绍Intelligent Idea Ultimate版激活以及JRebel的激活.仅供学习交流！喜欢这两大利器的朋友请支持正版！ IntelliJIdea 激活激活服务器地址1http://idea.imsxm.com/ JRebel 激活不废话，打开下面的网址https://my.jrebel.com/account/how-to-activate用你的Facebook或者Twitter账号登录，然后就可以获取注册码了。]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[Hello World]]></title>
       <url>%2F2016%2F12%2F02%2Fhello-world%2F</url>
-      <content type="text"><![CDATA[Hello ,World.Hexo，GitHub Pages.我的GitHub Pages终于搭建好了。 1System.out.println("Hello World!"); 感谢Hexo框架，感谢漂亮的Next主题。]]></content>
+      <content type="text"><![CDATA[Hello, World. Hello Hexo, GitHub Pages.我的GitHub Pages终于搭建好了。 1System.out.println("Hello World!"); 感谢Hexo框架，感谢漂亮的Next主题。]]></content>
     </entry>
 
     

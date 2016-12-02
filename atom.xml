@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-12-02T13:53:04.467Z</updated>
+  <updated>2016-12-02T15:20:53.349Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,17 +16,57 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hexo的使用</title>
+    <link href="http://yoursite.com/2016/12/02/hexo-practice/"/>
+    <id>http://yoursite.com/2016/12/02/hexo-practice/</id>
+    <published>2016-12-02T15:19:22.000Z</published>
+    <updated>2016-12-02T15:20:53.349Z</updated>
+    
+    <content type="html"><![CDATA[<p>先就不说怎么安装node以及hexo了吧，这个网上比较多。Google is your friend! Baidu is not!!!</p>
+<a id="more"></a>
+<h1 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h1><h2 id="新建草稿"><a href="#新建草稿" class="headerlink" title="新建草稿"></a>新建草稿</h2><figure class="highlight haxe"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">new</span> <span class="type">draft</span> <span class="keyword">new</span><span class="type"></span>-article</div></pre></td></tr></table></figure>
+<p>回车执行后会在source/_drafts目录下生成一个new-article.md文件<br>使用你喜欢的文本编辑工具编写这个markdown文件吧。</p>
+<blockquote>
+<p>注意：在drafts目录下markdown文件默认是不会显示在你博客上的。需要手动publish才可以。<br>draft相当于草稿。</p>
+</blockquote>
+<h2 id="发布文章"><a href="#发布文章" class="headerlink" title="发布文章"></a>发布文章</h2><figure class="highlight haxe"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo publish <span class="keyword">new</span><span class="type"></span>-article</div></pre></td></tr></table></figure>
+<p>回车后会将new-article.md文件从_drafts目录移动到_posts目录，也就是发布了这个博文。</p>
+<h1 id="生成网页"><a href="#生成网页" class="headerlink" title="生成网页"></a>生成网页</h1><figure class="highlight verilog"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">generate</span></div></pre></td></tr></table></figure>
+<p>也可以简写：<br>hexo g</p>
+<h1 id="启动本地服务"><a href="#启动本地服务" class="headerlink" title="启动本地服务"></a>启动本地服务</h1><figure class="highlight axapta"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">server</span></div></pre></td></tr></table></figure>
+<p>也可以简写成:<br>hexo s</p>
+<h1 id="清理资源"><a href="#清理资源" class="headerlink" title="清理资源"></a>清理资源</h1><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">hexo clean</span></div></pre></td></tr></table></figure>
+<p>也可以简写成：<br>hexo cl</p>
+<h1 id="发布到Github"><a href="#发布到Github" class="headerlink" title="发布到Github"></a>发布到Github</h1><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">hexo deploy</span></div></pre></td></tr></table></figure>
+<p>也可以简写成：<br>hexo d<br>如果发布出错，检查你的配置文件以及是否添加了Access Key到Github上。</p>
+<h1 id="命令可以用-amp-连起来执行"><a href="#命令可以用-amp-连起来执行" class="headerlink" title="命令可以用&amp;连起来执行"></a>命令可以用&amp;连起来执行</h1><p>比如我想先清理再生成再发布到Github，可以这么写命令<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">cl</span> &amp; hexo <span class="keyword">g</span> &amp; hexo <span class="built_in">d</span></div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;先就不说怎么安装node以及hexo了吧，这个网上比较多。Google is your friend! Baidu is not!!!&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="工具使用" scheme="http://yoursite.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>IntellijIdea/JRebel 激活</title>
     <link href="http://yoursite.com/2016/12/02/intellij-idea-activate/"/>
     <id>http://yoursite.com/2016/12/02/intellij-idea-activate/</id>
     <published>2016-12-02T13:30:00.000Z</published>
-    <updated>2016-12-02T13:53:04.467Z</updated>
+    <updated>2016-12-02T15:23:23.886Z</updated>
     
     <content type="html"><![CDATA[<p>本文主要介绍Intelligent Idea Ultimate版激活以及JRebel的激活.<br>仅供学习交流！喜欢这两大利器的朋友请支持正版！</p>
 <a id="more"></a>
-<h1 id="一-IntelliJIdea-激活"><a href="#一-IntelliJIdea-激活" class="headerlink" title="一. IntelliJIdea 激活"></a>一. IntelliJIdea 激活</h1><p>激活服务器地址<br><figure class="highlight dts"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">http:</span><span class="comment">//idea.imsxm.com/</span></div></pre></td></tr></table></figure></p>
+<h1 id="IntelliJIdea-激活"><a href="#IntelliJIdea-激活" class="headerlink" title="IntelliJIdea 激活"></a>IntelliJIdea 激活</h1><p>激活服务器地址<br><figure class="highlight dts"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">http:</span><span class="comment">//idea.imsxm.com/</span></div></pre></td></tr></table></figure></p>
 <p><img src="/assets/archivesImg/2016-12-02/ideaLicenceServer.png" alt="ideaLicenseServer.png"></p>
-<h1 id="二-JRebel-激活"><a href="#二-JRebel-激活" class="headerlink" title="二. JRebel 激活"></a>二. JRebel 激活</h1><p>不废话，打开下面的网址<br><a href="https://my.jrebel.com/account/how-to-activate" target="_blank" rel="external">https://my.jrebel.com/account/how-to-activate</a><br>用你的Facebook和Twitter账号登录，然后就可以获取注册码了。</p>
+<h1 id="JRebel-激活"><a href="#JRebel-激活" class="headerlink" title="JRebel 激活"></a>JRebel 激活</h1><p>不废话，打开下面的网址<br><a href="https://my.jrebel.com/account/how-to-activate" target="_blank" rel="external">https://my.jrebel.com/account/how-to-activate</a><br>用你的Facebook或者Twitter账号登录，然后就可以获取注册码了。</p>
 ]]></content>
     
     <summary type="html">
@@ -51,20 +91,20 @@
     <link href="http://yoursite.com/2016/12/02/hello-world/"/>
     <id>http://yoursite.com/2016/12/02/hello-world/</id>
     <published>2016-12-02T05:04:00.000Z</published>
-    <updated>2016-12-02T13:54:42.248Z</updated>
+    <updated>2016-12-02T15:22:26.668Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Hello-World-Hexo，GitHub-Pages"><a href="#Hello-World-Hexo，GitHub-Pages" class="headerlink" title="Hello ,World.Hexo，GitHub Pages."></a>Hello ,World.Hexo，GitHub Pages.</h1><p><img src="/assets/archivesImg/2016-12-02/ali.jpg" alt="ali.jpg"><br><a id="more"></a><br>我的GitHub Pages终于搭建好了。</p>
+    <content type="html"><![CDATA[<h1 id="Hello-World-Hello-Hexo-GitHub-Pages"><a href="#Hello-World-Hello-Hexo-GitHub-Pages" class="headerlink" title="Hello, World. Hello Hexo, GitHub Pages."></a>Hello, World. Hello Hexo, GitHub Pages.</h1><p><img src="/assets/archivesImg/2016-12-02/ali.jpg" alt="ali.jpg"><br><a id="more"></a><br>我的GitHub Pages终于搭建好了。</p>
 <figure class="highlight abnf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">System.out.println(<span class="string">"Hello World!"</span>)<span class="comment">;</span></div></pre></td></tr></table></figure>
 <p>感谢<a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>框架，感谢漂亮的<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">Next</a>主题。</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Hello-World-Hexo，GitHub-Pages&quot;&gt;&lt;a href=&quot;#Hello-World-Hexo，GitHub-Pages&quot; class=&quot;headerlink&quot; title=&quot;Hello ,World.Hexo，GitHub Pages.&quot;&gt;&lt;/a&gt;Hello ,World.Hexo，GitHub Pages.&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;/assets/archivesImg/2016-12-02/ali.jpg&quot; alt=&quot;ali.jpg&quot;&gt;&lt;br&gt;
+      &lt;h1 id=&quot;Hello-World-Hello-Hexo-GitHub-Pages&quot;&gt;&lt;a href=&quot;#Hello-World-Hello-Hexo-GitHub-Pages&quot; class=&quot;headerlink&quot; title=&quot;Hello, World. Hello Hexo, GitHub Pages.&quot;&gt;&lt;/a&gt;Hello, World. Hello Hexo, GitHub Pages.&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;/assets/archivesImg/2016-12-02/ali.jpg&quot; alt=&quot;ali.jpg&quot;&gt;&lt;br&gt;
     
     </summary>
     
-      <category term="喜悦" scheme="http://yoursite.com/categories/%E5%96%9C%E6%82%A6/"/>
+      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
