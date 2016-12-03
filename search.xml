@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[重新认识Http方法]]></title>
+      <url>%2F2016%2F12%2F03%2Frecognize-http-method%2F</url>
+      <content type="text"><![CDATA[Http 是在 TCP/IP 协议基础上的应用层协议。对于耳熟能详的GET/POST/PUT/DELETE方法，用对地方了吗？ GETGet是只读的。他也是安全的，他不应该改变资源状态。多次读取的同一个资源总是得到相同的数据。 幂等性 是 Safety 是 PUTPUT是一种写操作。他和POST很像。 幂等性 是 Safety 否 任何一个写操作的Http动作都不是安全的。 更新资源但PUT多次同一个资源，结果应该都是一致的。所以对于更新资源的操作，用PUT是没有任何疑问的。 添加资源资源的创建操作大部分情况都是客服端提供这个新资源的基础信息，然后服务器接收到资源后插入到数据库中，并且这个新资源在数据库中会获得一个自增长的唯一ID（也就是主键）。所以，创建操作大部分应当设计为POST.但是，如果客户端提供资源的全部属性（包括这个资源的主键ID）且服务器不会对其修改，这样的创建请求确保了幂等性，应该用PUT. 简而言之：资源主键服务器由服务器提供时应当用POST（非幂等性）；资源所有属性由客户端提供时应当用PUT（幂等性） DELETEDELETE方法是幂等的：多次删除同一份数据（一般传递这个资源的ID值）对于数据库来讲所产生的改变是相同的。 幂等性 是 Safety 是 执行删除的资源方法可以定义为void，因为删除一个资源一般对资源都很了解了，没有必要将其从服务器上传回来。可能有人要问了，没有返回值，我怎么知道删除成了没有？Good question，Http响应码有个204（No Content）.删除成功返回这个状态码即可。可能又有人要问了（哈哈，其实就是我问的。）对于多次删除同一个资源，第一次我知道删除成功要返回响应码204，那第二次再删除这个资源呢？我应该返回404（Not Found）还是仍然返回响应码204？Nice question,这个也困惑博主我许久，我也特意Google了一下。原来不是我一个有这样的困惑,详见StackOverflow。解决这个问题其实也很简单，回到最初这个DELETE方法上来，他是幂等的，这就意味着多次调用都应该返回相同的结果，所以当这个资源已经被删除了，再次调用DELETE删除这个资源，也应返回204（No Content). POSTPOST 是一种写操作的HTTP请求，是用于创建、添加资源的。正如上文PUT方法里所说，所有写操作都是不安全的（状态改变了）。 而且POST也比较特殊，他也不是幂等的，每次请求对服务器端资源（数据库）状态的改变不是相同的。（可能又有人要问了，我每次POST的数据都一样啊，按理说资源改变应该是相同的啊，但是同学你想想，你POST的时候你提供这个资源的唯一身份（主键）了吗？这个一般都是数据库来生成的（通常是自增长），所以即使你认为你每次POST的数据都一样，但实际上都是不一样的，请读者自行揣摩。） 幂等性 否 Safety 否 当一个资源创建好后，应该返回201（Created），并在Response的请求头中加入Location，并指向这个新资源的地址。而不是一股脑的返回200 OK. 总结一下： GET方法用于读取/检索、查询/过滤一个资源； PUT方法用于修改/更新资源、创建客户端维护主键信息的资源； DELETE方法用于删除资源； POST方法用于创建资源。 Http响应码的选择]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[Hexo的使用]]></title>
       <url>%2F2016%2F12%2F02%2Fhexo-practice%2F</url>
       <content type="text"><![CDATA[先就不说怎么安装node以及hexo了吧，这个网上比较多。Google is your friend! Baidu is not!!! 写作新建草稿1hexo new draft new-article 回车执行后会在source/_drafts目录下生成一个new-article.md文件使用你喜欢的文本编辑工具编写这个markdown文件吧。 注意：在drafts目录下markdown文件默认是不会显示在你博客上的。需要手动publish才可以。draft相当于草稿。 发布文章1hexo publish new-article 回车后会将new-article.md文件从_drafts目录移动到_posts目录，也就是发布了这个博文。 生成网页1hexo generate 也可以简写：hexo g 启动本地服务1hexo server 也可以简写成:hexo s 清理资源1hexo clean 也可以简写成：hexo cl 发布到Github1hexo deploy 也可以简写成：hexo d如果发布出错，检查你的配置文件以及是否添加了Access Key到Github上。 命令可以用&amp;连起来执行比如我想先清理再生成再发布到Github，可以这么写命令1hexo cl &amp; hexo g &amp; hexo d]]></content>

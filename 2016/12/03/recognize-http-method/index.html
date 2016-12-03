@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hexo," />
+  <meta name="keywords" content="Http,Jersey,RESTful," />
 
 
 
@@ -86,16 +86,21 @@
 
 
 
-<meta name="description" content="先就不说怎么安装node以及hexo了吧，这个网上比较多。Google is your friend! Baidu is not!!!">
+<meta name="description" content="Http 是在 TCP/IP 协议基础上的应用层协议。对于耳熟能详的GET/POST/PUT/DELETE方法，用对地方了吗？">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo的使用">
-<meta property="og:url" content="http://yoursite.com/2016/12/02/hexo-practice/index.html">
+<meta property="og:title" content="重新认识Http方法">
+<meta property="og:url" content="http://yoursite.com/2016/12/03/recognize-http-method/index.html">
 <meta property="og:site_name" content="Threshold的博客">
-<meta property="og:description" content="先就不说怎么安装node以及hexo了吧，这个网上比较多。Google is your friend! Baidu is not!!!">
-<meta property="og:updated_time" content="2016-12-02T15:20:53.349Z">
+<meta property="og:description" content="Http 是在 TCP/IP 协议基础上的应用层协议。对于耳熟能详的GET/POST/PUT/DELETE方法，用对地方了吗？">
+<meta property="og:image" content="https://i.stack.imgur.com/0pDZI.png">
+<meta property="og:image" content="https://i.stack.imgur.com/LayiK.png">
+<meta property="og:image" content="https://i.stack.imgur.com/UTpnp.png">
+<meta property="og:image" content="https://i.stack.imgur.com/Wy1rN.png">
+<meta property="og:updated_time" content="2016-12-03T14:24:09.001Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo的使用">
-<meta name="twitter:description" content="先就不说怎么安装node以及hexo了吧，这个网上比较多。Google is your friend! Baidu is not!!!">
+<meta name="twitter:title" content="重新认识Http方法">
+<meta name="twitter:description" content="Http 是在 TCP/IP 协议基础上的应用层协议。对于耳熟能详的GET/POST/PUT/DELETE方法，用对地方了吗？">
+<meta name="twitter:image" content="https://i.stack.imgur.com/0pDZI.png">
 
 
 
@@ -123,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/12/02/hexo-practice/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/12/03/recognize-http-method/"/>
 
 
 
 
 
-  <title> Hexo的使用 | Threshold的博客 </title>
+  <title> 重新认识Http方法 | Threshold的博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -283,7 +288,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/12/02/hexo-practice/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/12/03/recognize-http-method/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Threshold">
@@ -307,7 +312,7 @@
             
             
               
-                Hexo的使用
+                重新认识Http方法
               
             
           </h1>
@@ -320,8 +325,8 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-02T23:19:22+08:00">
-                2016-12-02
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-03T14:00:08+08:00">
+                2016-12-03
               </time>
             
 
@@ -339,8 +344,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/工具使用/" itemprop="url" rel="index">
-                    <span itemprop="name">工具使用</span>
+                  <a href="/categories/RESTful-Api/" itemprop="url" rel="index">
+                    <span itemprop="name">RESTful Api</span>
                   </a>
                 </span>
 
@@ -354,8 +359,8 @@
             
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
-                <a href="/2016/12/02/hexo-practice/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/02/hexo-practice/" itemprop="commentCount"></span>
+                <a href="/2016/12/03/recognize-http-method/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/03/recognize-http-method/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -386,24 +391,77 @@
       
 
       
-        <p>先就不说怎么安装node以及hexo了吧，这个网上比较多。Google is your friend! Baidu is not!!!</p>
+        <p>Http 是在 TCP/IP 协议基础上的应用层协议。对于耳熟能详的GET/POST/PUT/DELETE方法，用对地方了吗？</p>
 <a id="more"></a>
-<h1 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h1><h2 id="新建草稿"><a href="#新建草稿" class="headerlink" title="新建草稿"></a>新建草稿</h2><figure class="highlight haxe"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">new</span> <span class="type">draft</span> <span class="keyword">new</span><span class="type"></span>-article</div></pre></td></tr></table></figure>
-<p>回车执行后会在source/_drafts目录下生成一个new-article.md文件<br>使用你喜欢的文本编辑工具编写这个markdown文件吧。</p>
-<blockquote>
-<p>注意：在drafts目录下markdown文件默认是不会显示在你博客上的。需要手动publish才可以。<br>draft相当于草稿。</p>
+<h1 id="GET"><a href="#GET" class="headerlink" title="GET"></a>GET</h1><p>Get是只读的。他也是安全的，他不应该改变资源状态。多次读取的同一个资源总是得到相同的数据。</p>
+<table>
+<thead>
+<tr>
+<th>幂等性</th>
+<th style="text-align:center">是</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Safety</td>
+<td style="text-align:center">是</td>
+</tr>
+</tbody>
+</table>
+<h1 id="PUT"><a href="#PUT" class="headerlink" title="PUT"></a>PUT</h1><p>PUT是一种写操作。他和POST很像。</p>
+<table>
+<thead>
+<tr>
+<th>幂等性</th>
+<th style="text-align:center">是</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Safety</td>
+<td style="text-align:center">否</td>
+</tr>
+</tbody>
+</table>
+<p>任何一个写操作的Http动作都不是安全的。</p>
+<h2 id="更新资源"><a href="#更新资源" class="headerlink" title="更新资源"></a>更新资源</h2><p>但PUT多次同一个资源，结果应该都是一致的。<br>所以对于更新资源的操作，用PUT是没有任何疑问的。</p>
+<h2 id="添加资源"><a href="#添加资源" class="headerlink" title="添加资源"></a>添加资源</h2><p>资源的创建操作大部分情况都是客服端提供这个新资源的基础信息，然后服务器接收到资源后插入到数据库中，并且这个新资源在数据库中会获得一个自增长的唯一ID（也就是主键）。所以，创建操作大部分应当设计为POST.<br>但是，如果客户端提供资源的全部属性（包括这个资源的主键ID）且服务器不会对其修改，这样的创建请求确保了幂等性，应该用PUT.</p>
+<p>简而言之：资源主键服务器由服务器提供时应当用POST（非幂等性）；资源所有属性由客户端提供时应当用PUT（幂等性）</p>
+<h1 id="DELETE"><a href="#DELETE" class="headerlink" title="DELETE"></a>DELETE</h1><p>DELETE方法是幂等的：多次删除同一份数据（一般传递这个资源的ID值）对于数据库来讲所产生的改变是相同的。</p>
+<table>
+<thead>
+<tr>
+<th>幂等性</th>
+<th style="text-align:center">是</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Safety</td>
+<td style="text-align:center">是</td>
+</tr>
+</tbody>
+</table>
+<p>执行删除的资源方法可以定义为void，因为删除一个资源一般对资源都很了解了，没有必要将其从服务器上传回来。<br>可能有人要问了，没有返回值，我怎么知道删除成了没有？<br>Good question，Http响应码有个204（No Content）.删除成功返回这个状态码即可。<br>可能又有人要问了（哈哈，其实就是我问的。）对于多次删除同一个资源，第一次我知道删除成功要返回响应码204，那第二次再删除这个资源呢？我应该返回404（Not Found）还是仍然返回响应码204？<br>Nice question,这个也困惑博主我许久，我也特意Google了一下。原来不是我一个有这样的困惑,详见<a href="http://stackoverflow.com/questions/6439416/deleting-a-resource-using-http-delete" target="_blank" rel="external">StackOverflow</a>。解决这个问题其实也很简单，回到最初这个DELETE方法上来，他是幂等的，这就意味着多次调用都应该返回相同的结果，所以当这个资源已经被删除了，再次调用DELETE删除这个资源，也应返回204（No Content).</p>
+<h1 id="POST"><a href="#POST" class="headerlink" title="POST"></a>POST</h1><p>POST 是一种写操作的HTTP请求，是用于创建、添加资源的。正如上文PUT方法里所说，所有写操作都是不安全的（状态改变了）。 而且POST也比较特殊，他也不是幂等的，每次请求对服务器端资源（数据库）状态的改变不是相同的。（可能又有人要问了，我每次POST的数据都一样啊，按理说资源改变应该是相同的啊，但是同学你想想，你POST的时候你提供这个资源的唯一身份（主键）了吗？这个一般都是数据库来生成的（通常是自增长），所以即使你认为你每次POST的数据都一样，但实际上都是不一样的，请读者自行揣摩。）</p>
+<table>
+<thead>
+<tr>
+<th>幂等性</th>
+<th style="text-align:center">否</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Safety</td>
+<td style="text-align:center">否</td>
+</tr>
+</tbody>
+</table>
+<p>当一个资源创建好后，应该返回201（Created），并在Response的请求头中加入Location，并指向这个新资源的地址。而不是一股脑的返回200 OK.</p>
+<blockquote class="blockquote-center"><p>总结一下：<br>          GET方法用于读取/检索、查询/过滤一个资源；<br>          PUT方法用于修改/更新资源、创建客户端维护主键信息的资源；<br>          DELETE方法用于删除资源；<br>          POST方法用于创建资源。</p>
 </blockquote>
-<h2 id="发布文章"><a href="#发布文章" class="headerlink" title="发布文章"></a>发布文章</h2><figure class="highlight haxe"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo publish <span class="keyword">new</span><span class="type"></span>-article</div></pre></td></tr></table></figure>
-<p>回车后会将new-article.md文件从_drafts目录移动到_posts目录，也就是发布了这个博文。</p>
-<h1 id="生成网页"><a href="#生成网页" class="headerlink" title="生成网页"></a>生成网页</h1><figure class="highlight verilog"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">generate</span></div></pre></td></tr></table></figure>
-<p>也可以简写：<br>hexo g</p>
-<h1 id="启动本地服务"><a href="#启动本地服务" class="headerlink" title="启动本地服务"></a>启动本地服务</h1><figure class="highlight axapta"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">server</span></div></pre></td></tr></table></figure>
-<p>也可以简写成:<br>hexo s</p>
-<h1 id="清理资源"><a href="#清理资源" class="headerlink" title="清理资源"></a>清理资源</h1><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">hexo clean</span></div></pre></td></tr></table></figure>
-<p>也可以简写成：<br>hexo cl</p>
-<h1 id="发布到Github"><a href="#发布到Github" class="headerlink" title="发布到Github"></a>发布到Github</h1><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">hexo deploy</span></div></pre></td></tr></table></figure>
-<p>也可以简写成：<br>hexo d<br>如果发布出错，检查你的配置文件以及是否添加了Access Key到Github上。</p>
-<h1 id="命令可以用-amp-连起来执行"><a href="#命令可以用-amp-连起来执行" class="headerlink" title="命令可以用&amp;连起来执行"></a>命令可以用&amp;连起来执行</h1><p>比如我想先清理再生成再发布到Github，可以这么写命令<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">cl</span> &amp; hexo <span class="keyword">g</span> &amp; hexo <span class="built_in">d</span></div></pre></td></tr></table></figure></p>
+<h1 id="Http响应码的选择"><a href="#Http响应码的选择" class="headerlink" title="Http响应码的选择"></a>Http响应码的选择</h1><p><img src="https://i.stack.imgur.com/0pDZI.png" alt="WhereToStart"><br><img src="https://i.stack.imgur.com/LayiK.png" alt="2XX/3XX"><br><img src="https://i.stack.imgur.com/UTpnp.png" alt="4XX"><br><img src="https://i.stack.imgur.com/Wy1rN.png" alt="5XX"></p>
 
       
     </div>
@@ -448,7 +506,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
+            <a href="/tags/Http/" rel="tag"># Http</a>
+          
+            <a href="/tags/Jersey/" rel="tag"># Jersey</a>
+          
+            <a href="/tags/RESTful/" rel="tag"># RESTful</a>
           
         </div>
       
@@ -457,8 +519,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/12/02/intellij-idea-activate/" rel="next" title="IntellijIdea/JRebel 激活">
-                <i class="fa fa-chevron-left"></i> IntellijIdea/JRebel 激活
+              <a href="/2016/12/02/hexo-practice/" rel="next" title="Hexo的使用">
+                <i class="fa fa-chevron-left"></i> Hexo的使用
               </a>
             
           </div>
@@ -466,10 +528,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/12/03/recognize-http-method/" rel="prev" title="重新认识Http方法">
-                重新认识Http方法 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -495,8 +553,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/12/02/hexo-practice/"
-           data-title="Hexo的使用" data-url="http://yoursite.com/2016/12/02/hexo-practice/">
+      <div class="ds-thread" data-thread-key="2016/12/03/recognize-http-method/"
+           data-title="重新认识Http方法" data-url="http://yoursite.com/2016/12/03/recognize-http-method/">
       </div>
     
   </div>
@@ -638,7 +696,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#写作"><span class="nav-number">1.</span> <span class="nav-text">写作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#新建草稿"><span class="nav-number">1.1.</span> <span class="nav-text">新建草稿</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#发布文章"><span class="nav-number">1.2.</span> <span class="nav-text">发布文章</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#生成网页"><span class="nav-number">2.</span> <span class="nav-text">生成网页</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#启动本地服务"><span class="nav-number">3.</span> <span class="nav-text">启动本地服务</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#清理资源"><span class="nav-number">4.</span> <span class="nav-text">清理资源</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#发布到Github"><span class="nav-number">5.</span> <span class="nav-text">发布到Github</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#命令可以用-amp-连起来执行"><span class="nav-number">6.</span> <span class="nav-text">命令可以用&连起来执行</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#GET"><span class="nav-number">1.</span> <span class="nav-text">GET</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#PUT"><span class="nav-number">2.</span> <span class="nav-text">PUT</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#更新资源"><span class="nav-number">2.1.</span> <span class="nav-text">更新资源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加资源"><span class="nav-number">2.2.</span> <span class="nav-text">添加资源</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DELETE"><span class="nav-number">3.</span> <span class="nav-text">DELETE</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#POST"><span class="nav-number">4.</span> <span class="nav-text">POST</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Http响应码的选择"><span class="nav-number">5.</span> <span class="nav-text">Http响应码的选择</span></a></li></ol></div>
             
 
           </div>
